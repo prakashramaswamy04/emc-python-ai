@@ -1,0 +1,13 @@
+# Bus Ticket Booking System - Requirements
+# This project uses only Python standard library modules
+# No external dependencies required
+
+# Python Version Required
+# Python 3.6+
+
+# Built-in modules used:
+# - sys (for input/output)
+# - io (for testing with StringIO)
+
+# To run this project, simply have Python 3.6+ installed
+# No pip install needed!
