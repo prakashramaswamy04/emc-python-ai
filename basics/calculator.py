@@ -1,18 +1,3 @@
-
-
-
-def show_main_menu():
-    """
-    Displays the main menu with options for:
-    - User Login (Book/Cancel/View tickets)
-    - Admin Login (Manage buses)
-    - Exit
-    """
-    print("\nChoose an option:\n")
-    print("1. 👤 User Login (Book/Cancel Tickets)")
-    print("3. 🚪 Exit")
-    print()
-
 def calculator():
     try:
         a = int(input("Enter first number: "))
