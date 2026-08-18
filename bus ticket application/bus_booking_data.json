@@ -120,7 +120,6 @@
       "arrival": "18:30",
       "total_seats": 20,
       "available_seats": [
-        1,
         2,
         3,
         4,
@@ -142,8 +141,64 @@
         20
       ],
       "price": 950
+    },
+    "12334": {
+      "name": "Intercity",
+      "source": "Tenkasi",
+      "destination": "Chennai",
+      "date": "2022-08-18",
+      "departure": "23:00",
+      "arrival": "08:00",
+      "total_seats": 20,
+      "available_seats": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "price": 1200.0
     }
   },
-  "bookings": {},
-  "booking_id_counter": 1001
+  "bookings": {
+    "1001": {
+      "passengers": [
+        {
+          "seat": 1,
+          "passenger_name": "Prakash",
+          "passenger_age": 24,
+          "passenger_phone": "9098765456"
+        }
+      ],
+      "passenger_name": "Prakash",
+      "passenger_age": 24,
+      "passenger_phone": "9098765456",
+      "bus_id": 104,
+      "seat": "1",
+      "seats": [
+        1
+      ],
+      "seat_count": 1,
+      "date": "2026-08-21",
+      "price": 950,
+      "price_per_seat": 950,
+      "status": "confirmed"
+    }
+  },
+  "booking_id_counter": 1002
 }

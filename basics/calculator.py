@@ -1,28 +1,71 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
 
-process = input("Choose operation (add, subtract, multiply, divide): ")
 
-if process == "add":
-    result = a + b
-    print("Result:", result)
-elif process == "subtract":
-    result = a - b
-    print("Result:", result)
-elif process == "multiply":
-    result = a * b
-    print("Result:", result)
-elif process == "divide":  
-    if b != 0:
+
+def show_main_menu():
+    """
+    Displays the main menu with options for:
+    - User Login (Book/Cancel/View tickets)
+    - Admin Login (Manage buses)
+    - Exit
+    """
+    print("\nChoose an option:\n")
+    print("1. 👤 User Login (Book/Cancel Tickets)")
+    print("3. 🚪 Exit")
+    print()
+
+def calculator():
+    try:
+        a = int(input("Enter first number: "))
+        b = int(input("Enter second number: "))
+        process = input("Choose operation (add, subtract, multiply, divide): ")
+        if process == "add":
+            result = addition(a, b)
+            print("Result:", result)
+        elif process == "subtract":
+            result = subtract(a, b)
+            print("Result:", result)
+        elif process == "multiply":
+            result = multiply(a, b)
+            print("Result:", result)
+        elif process == "divide":  
+            if b != 0:
+                result = divide(a, b)
+                print("Result:", result)
+            else:
+                raise KeyError("Error: Division by zero is not allowed.")
+        else:
+            print("Choose the Correct Operator")
+    except Exception as error:
+            print(error)
+    return result
+
+def addition(a, b):
+    try:
+        result = a + b
+    except Exception as error:
+        print(error)
+    return result
+
+def subtract(a, b):
+    try:
+        result = a - b
+    except Exception as error:
+        print(error)
+    return result
+
+def multiply(a, b):
+    try:
+        result = a * b
+    except Exception as error:
+        print(error)
+    return result
+
+def divide(a, b):
+    try:
         result = a / b
-        print("Result:", result)
-    else:
-        print("Error: Division by zero is not allowed.")
+    except Exception as error:
+        print(error)
+    return result
 
-
-users = {
-    1234: {"name": "User 1", "age": 10},
-    2343: {"name": "User 2", "age": 23},
-    7829: {"name": "User 3", "age": 67},
-    2982: {"name": "User 4", "age": 23}
-}
+result = calculator()
+print(result)
