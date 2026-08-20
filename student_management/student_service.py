@@ -2,8 +2,8 @@ import random
 import re
 from typing import List, Optional, Dict
 
-from .csv_handler import FIELDNAMES, read_students, write_student, overwrite_students
-from .models import Student
+from csv_handler import FIELDNAMES, read_students, write_student, overwrite_students
+from models import Student
 
 
 def generate_student_id(csv_path: str, prefix: str = "STU", digits: int = 5) -> str:

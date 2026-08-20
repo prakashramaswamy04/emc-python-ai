@@ -7,7 +7,7 @@ an interactive menu-driven console interface.
 import os
 import sys
 
-from .student_service import (
+from student_service import (
     add_student,
     get_all_students,
     find_student_by_id,
@@ -151,7 +151,7 @@ def prompt_delete_student() -> None:
 def main() -> None:
     print("Starting Student Management System. CSV:", CSV_PATH)
     # Ensure the CSV file exists by importing the csv handler indirectly
-    from .csv_handler import ensure_csv
+    from csv_handler import ensure_csv
 
     ensure_csv(CSV_PATH)
 
